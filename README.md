@@ -1,36 +1,15 @@
-# lost_comms_recovery [![Build Status](http://build.ros.org/buildStatus/icon?job=Kbin_uX64__lost_comms_recovery__ubuntu_xenial_amd64__binary)](http://build.ros.org/job/Kbin_uX64__lost_comms_recovery__ubuntu_xenial_amd64__binary)
+# lost_comms_recovery
 
 If your robot loses connection to the base station it will navigate to a configurable home.
 
+*NOTE*: This package was orginally created by daniel snider of R3, but I have modified to simplified use to simply ensure safe robot usage on network lose. I am in no way claiming this to be my work, I simply modified for my purpose as allowed by the liscense.
+
 ## Quick Start
 
-1. Install:
-
-```
-$ sudo apt-get install ros-kinetic-lost-comms-recovery
-```
-2. Launch node:
+1. Launch node:
 
 ```
 $ roslaunch lost_comms_recovery lost_comms_recovery.launch
 ```
 
-3. Normal output:
-
-```
-$ roslaunch lost_comms_recovery lost_comms_recovery.launch ips_to_monitor:=192.168.190.136
-
-[INFO] Monitoring base station on IP(s): 192.168.190.136.
-[INFO] Connected to base station.
-[INFO] Connected to base station.
-...
-[ERROR] No connection to base station.
-[INFO] Connected to move_base.
-[INFO] Executing move_base goal to position (x,y) 0.0, 0.0.
-[INFO] Inital goal status: PENDING
-[INFO] This goal has been accepted by the simple action server
-[INFO] Final goal status: SUCCEEDED
-[INFO] Goal reached.
-```
-
-**Full documentation on wiki: [http://wiki.ros.org/lost_comms_recovery](http://wiki.ros.org/lost_comms_recovery)**
+Any questions of concerns, please contact [woudie](stwoudie@gmail.com)
