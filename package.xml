@@ -1,0 +1,23 @@
+<package>
+  <name>lost_comms_recovery</name>
+  <version>0.1.0</version>
+  <description>
+      If your robot loses connection to the base station it will stop motors or navigate home.
+  </description>
+  
+  <author email="danielsnider12@gmail.com">Daniel Snider</author>
+  
+  <maintainer email="danielsnider12@gmail.com">Daniel Snider</maintainer>
+  <editor email="stwoudie@gmail.com">Stephen Abraham</author>
+  
+  <license>Unlicense</license>
+  
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>rospy</build_depend>
+  <build_depend>std_msgs</build_depend>
+  <build_depend>geometry_msgs</build_depend>
+  <run_depend>rospy</run_depend>
+  <run_depend>std_msgs</run_depend>
+  <run_depend>geometry_msgs</run_depend>
+
+</package>
